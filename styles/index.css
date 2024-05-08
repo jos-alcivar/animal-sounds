@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    background:
+    conic-gradient(#fff7f1 25%,#0000 0) 0 0/calc(2*32px) calc(32px/9.5),
+    conic-gradient(#fff7f1 25%,#0000 0) 0 0/calc(32px/9.5) calc(2*32px),
+    repeating-conic-gradient(#0000 0 25%,#fff7f1 0 50%) 
+     32px 0 /calc(2*32px) calc(2*32px),
+    radial-gradient(50% 50%,#ffe4c9 98%,#fff7f1) 
+     0 0/32px 32px;
+}
+
+.container.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 10rem;
+    font-family: "Chela One", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: #E78895;
+    text-shadow: 5px 5px 5px #BED1CF;
+}
+
+.instructions {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: "Chelsea Market", system-ui ;
+    color: #E78895;
+    text-shadow: 10px 10px 10px #BED1CF;
+}
+.row-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 2.5rem;
+}
+
+.btn-play {
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    border-style: none;
+    border-radius: 15px;
+    background-color: #BED1CF;
+    color:#fff7f1;
+    box-shadow: 10px 10px 5px #94a1a0;
+}
+
+.container.imgRow{
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: baseline;
+}
+
+.left {
+    justify-content: left;
+}
+
+.center {
+    align-self: flex-end;
+}
+
+.right {
+    justify-content: right;
+}
+
+img.images {
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: gray;
+    border-width: 0.25rem;
+    box-shadow: 10px 10px 5px #BED1CF;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    filter: brightness(0.975) saturate(85%) blur(0.35px);
+}
+
+/* media Classes */
+@media (max-width: 768px) {
+
+    .container.imgRow { 
+        height: 100vh;
+        padding-bottom: 2rem;
+    }
+    
+    .container.imgRow{
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+        margin: 2.5rem 0;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        margin: 2.5rem 0;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        margin: 2.5rem 0;
+    }
+
+    img.images {
+        flex-shrink: 0;
+    }
+
+    .heading {
+        font-size:8rem;
+    }
+    
+    .instructions {
+        font-size: 1rem;
+    }
+}
+
+
+/* interactive Classes */
+.bull {
+    background-image: url(../assets/images/bull.jpg);
+}
+.cat {
+    background-image: url(../assets/images/cat.jpg);
+}
+.chicken {
+    background-image: url(../assets/images/chicken.jpg);
+}
+.cow {
+    background-image: url(../assets/images/cow.png);
+}
+.dog {
+    background-image: url(../assets/images/dog.png);
+}
+.donkey {
+    background-image: url(../assets/images/donkey.jpg);
+}
+.duck {
+    background-image: url(../assets/images/duck.jpg);
+}
+.geese {
+    background-image: url(../assets/images/geese.png);
+}
+.goat {
+    background-image: url(../assets/images/goat.jpg);
+}
+.horse {
+    background-image: url(../assets/images/horse.png);
+}
+.pig {
+    background-image: url(../assets/images/pig.jpg);
+}
+.rooster {
+    background-image: url(../assets/images/rooster.jpg);
+}
+.sheep {
+    background-image: url(../assets/images/sheep.jpg);
+}
+.turkey {
+    background-image: url(../assets/images/turkey.jpg);
+}
+
+.imgMouseHover {
+    border-color: #ffe4c9 !important;
+    filter: brightness(1.0) saturate(100%) blur(0px)!important;
+}
+
+.disabledbutton {
+    pointer-events: none;
+    filter: brightness(0.5) saturate(50%) blur(0px)!important;
+}
+
+.correctbutton {
+    pointer-events: none;
+    border-color: greenyellow !important;
+}
