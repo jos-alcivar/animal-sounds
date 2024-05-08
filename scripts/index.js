@@ -87,18 +87,8 @@ for (let i = 0; i < numberOfImages; i++) {
 
 
 document.querySelector('.btn-play').addEventListener('click', function() { // Assign sound to play button
-    // Blob url
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", `../assets/sounds/${farmAnimalsList[randomIndexes[indexAnswer]].sound}`);
-    xhr.responseType = "arraybuffer";
-    xhr.onload = (e) => {
-        let blob = new Blob([xhr.response]);
-        let url = URL.createObjectURL(blob);
-        let sound = new Audio(url);
-        sound.play();
-    }
-    xhr.send();
-
+    let sound = new Audio(`../animalSoundsGame/assets/sounds/${farmAnimalsList[randomIndexes[indexAnswer]].sound}`)
+    sound.play();
     console.log(farmAnimalsList[randomIndexes[indexAnswer]]);
 });
 
