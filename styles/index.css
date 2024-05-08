@@ -94,14 +94,11 @@ img.images {
 /* media Classes */
 @media (max-width: 768px) {
 
-    .container.imgRow { 
-        height: 100vh;
-        padding-bottom: 2rem;
-    }
     
     .container.imgRow{
+        height: 100vh;
         display: block;
-        margin-bottom: 5rem;
+        align-content: center;
     }
 
     .left {
