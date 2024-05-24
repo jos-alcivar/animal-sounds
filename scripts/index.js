@@ -87,7 +87,7 @@ for (let i = 0; i < numberOfImages; i++) {
 
 
 document.querySelector('.btn-play').addEventListener('click', function() { // Assign sound to play button
-    let sound = new Audio(`../animalSoundsGame/assets/sounds/${farmAnimalsList[randomIndexes[indexAnswer]].sound}`)
+    let sound = new Audio(`./assets/sounds/${farmAnimalsList[randomIndexes[indexAnswer]].sound}`)
     sound.play();
     console.log(farmAnimalsList[randomIndexes[indexAnswer]]);
 });
